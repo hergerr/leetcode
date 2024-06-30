@@ -3,7 +3,6 @@ class Solution:
 
     def reverse(self, x: int) -> int:
         is_negative = x < 0
-        MIN = 2**31 - 1
         MAX = 2**31
         result = 0
         
