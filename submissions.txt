@@ -1,2 +1,2 @@
 To submit later:
-- 271
+- O(1) 42
