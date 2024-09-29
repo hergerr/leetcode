@@ -14,7 +14,7 @@ class MyLinkedList:
         self.size = 0
 
     def findNode(self, index) -> Node:
-        if index < 0 or self.size == 0 or index:
+        if not 0 <= index < self.size:
             return
         counter = 0
         node = self.head.nxt
@@ -66,6 +66,7 @@ class MyLinkedList:
         
         node.prev.nxt = node.nxt
         node.nxt.prev = node.prev
+        self.size -= 1
 
 
 # Your MyLinkedList object will be instantiated and called as such:
